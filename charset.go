@@ -8,13 +8,6 @@ func strToSt70660b(inp string) (ut []byte) {
 	for _, c := range inp {
 		ut[i] = runeToSt70660b(c)
 		i++
-		/*
-			if val, ok := charMap[c]; ok {
-				ut[i] = val
-			} else {
-				ut[i] = 0x3f // Question mark
-			}
-		*/
 	}
 	return
 }
