@@ -163,7 +163,7 @@ func (l *Device) PrintAt(row, col uint8, text string) {
 
 // PrintByte prints just one byte character to the LCD display
 func (l *Device) PrintByte(ch byte) {
-	l.write(runeToSt70660b(rune(ch)), cmdData)
+	l.write(ch, cmdData)
 }
 
 // PrintRune prints just one rune character to the LCD display
