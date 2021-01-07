@@ -137,6 +137,7 @@ Turns the display on/off. Note that this doesn't close the gpio's - use ```Close
 - Use of the R/W pin is not implemented (which would probably make it both faster and more stable), so the R/W pin must be held low (to gnd)
 - The ST7066 chip has support for user-provided characters, but that functionality is not implemented
 - More tests and testing is needed!
+- This driver implements the ROM code 0A variant of the ST7066U chip, but there are character mappings missing (as I don't know what they represent...)
 
 ## License
 
